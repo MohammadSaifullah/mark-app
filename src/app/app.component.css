@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    margin: 0px;
+    height: 580px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.topBar{
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    border: solid transparent 1px;
+    background-color:lightyellow;
+    color: darkred;
+    font-family: 'Times New Roman';
+    z-index: 1;
+}
+.innerBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+table{
+    border-collapse: collapse;
+    border: white 1px solid;
+}
+th{
+    background-color:darkred;
+    color: whitesmoke;
+    padding: 5px;
+}
+td{
+    background-color:ghostwhite;
+    color: darkred;
+    padding: 5px;
+}
+textarea{
+    background-color: ghostwhite;
+    color: darkred;
+    height: 100%;
+
+}
+td input{
+    background: rgb(165, 1, 1);
+    border: transparent solid 1px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.nameInput{
+    background-color: rgb(226, 223, 223);
+    height: 30px;
+    border-color: transparent;
+    width: 100%;
+    border-radius: 7px;
+    
+}
+.save{
+    border:1px solid transparent;
+    
+    color: black;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+}
+.save:active{
+    background-color: darkgrey;
+}
+.save:disabled{
+    color:white;
+}
+.name{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    height: 100px;
+    position: absolute;
+}
+
+.name button{
+    margin-top: 10px;
+    margin-right: 0px;
+}
+td button{
+    margin-left:5px ;
+    margin-right: 5px;
+    border: transparent solid 1px;
+}
+.output{
+    margin-top: 4%;
+}
+.inputTable{
+    margin-top: 100px;
+}
