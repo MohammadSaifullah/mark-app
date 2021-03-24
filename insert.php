@@ -8,14 +8,6 @@ $data = json_decode($request_body, true);
     $name = $data['name'];
     $sub = $data['sub'];
     $ins = "INSERT INTO markTable (Name,subjectAndMark) VALUES ( '$name','$sub' )";
-    if($ins){
-        echo"Inserted";
-    }
-    else{
-        echo "Not inserted";
-    }
-    $name = $data['name'];
-    $sub = $data['sub'];
     if (!$name) {
         $resp = array(
             'success' => false,
@@ -27,8 +19,6 @@ $data = json_decode($request_body, true);
         exit;      
     }
     $err = $conn->query($ins);
-    
-    
     $resp = array(
         'success' => true,
         'message' => 'Added successfully!!',

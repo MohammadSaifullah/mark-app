@@ -39,11 +39,13 @@ td{
     background-color:ghostwhite;
     color: darkred;
     padding: 5px;
+    text-align: center;
 }
 textarea{
     background-color: ghostwhite;
     color: darkred;
     height: 100%;
+    border: transparent 1px solid;
 
 }
 td input{
@@ -76,6 +78,20 @@ td input{
     background-color: darkgrey;
 }
 .save:disabled{
+    color:white;
+}
+.update{
+    border:1px solid transparent;
+    
+    color: black;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}
+.update:active{
+    background-color: darkgrey;
+}
+.update:disabled{
     color:white;
 }
 .name{

@@ -14,7 +14,7 @@
           <tr>
             <th>Subject Name-Marks</th>
 
-            <th>Action</th>
+            <!-- <th>Action</th> -->
           </tr>
           <tr *ngFor="let x of studentDetail;index as i">
             <textarea placeholder="Enter in Subject Name - Mark format" [(ngModel)]="subjectName"></textarea>
@@ -22,15 +22,16 @@
             <td><input type="number" [(ngModel)]="x.mark" #mark="ngModel"
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                 maxlength="3" required />{{x.marks}}</td> -->
-            <td>
-              <!-- <button (click)="newRow()" [disabled]="note.invalid || mark.invalid">Add</button> -->
-              <!-- <button (click)="delete(i)">Delete</button> -->
-            </td>
+            <!-- <td>
+              <button (click)="newRow()" [disabled]="note.invalid || mark.invalid">Add</button> 
+               <button (click)="delete(i)">Delete</button>
+            </td> -->
           </tr>
         </table>
       </div>
       <br>
-      <button class="save" [disabled]="name.invalid" (click)="apiInsert();">Save</button>
+      <button class="save" *ngIf ="sava"  [disabled]="name.invalid" (click)="apiInsert();">Save</button><br>
+      <button class="update" *ngIf ="updata" [disabled]="name.invalid" (click)="update();">update</button>
     </div>
     <div class="output">
       <table border="1">
@@ -45,7 +46,7 @@
           <td>{{x.Name}}</td>
           <td>{{x.subjectAndMark}}</td>
           <td>
-            <button>Edit</button>
+            <button (click)="edit(x)">Edit</button>
             <button (click)="deleteOutput(i)">Delete</button>
           </td>
         </tr>
