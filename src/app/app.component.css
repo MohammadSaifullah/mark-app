@@ -2,16 +2,6 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-body{
-    margin: 0px;
-    height:500pt;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
-    background-image: url(https://i.pinimg.com/originals/d3/b2/09/d3b209c68bc63649d173cd05ae9146ca.jpg);
-}
 .topBar{
     text-align: center;
     height: 70px;
@@ -31,6 +21,7 @@ body{
 table{
     border-collapse: collapse;
     border: white 1px solid;
+    table-layout: fixed;
 }
 th{
     background-color:darkred;
@@ -43,7 +34,7 @@ td{
     padding: 5px;
     text-align: center;
     word-wrap:break-word;
-    width: 10px;
+    
 }
 textarea{
     background-color: ghostwhite;
@@ -67,22 +58,22 @@ td input{
     height: 30px;
     border-color: transparent;
     width: 100%;
-    border-radius: 7px;
-    
+    border-radius: 7px;   
 }
 .save{
     border:1px solid transparent;
-    
-    color: black;
-    height: 30px;
-    width: 40px;
+    color: white;
+    height: 35px;
+    width: 65px;
     text-align: center;
+    background-color: darkred;
 }
 .save:active{
     background-color: darkgrey;
 }
 .save:disabled{
     color:white;
+    background-color: rgba(139, 0, 0, 0.562);
 }
 .update{
     border:1px solid transparent;
@@ -106,7 +97,6 @@ td input{
     height: 100px;
     position: absolute;
 }
-
 .name button{
     margin-top: 10px;
     margin-right: 0px;
@@ -118,7 +108,34 @@ td button{
 }
 .output{
     margin-top: 4%;
+    height: 100%;
+    overflow-y: scroll;
 }
 .inputTable{
     margin-top: 100px;
 }
+.submark{
+    width: 50px;
+}
+.save .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+.save .tooltiptext:hover{
+    visibility: visible;
+    opacity: 1;
+  }

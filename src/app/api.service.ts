@@ -26,7 +26,4 @@ export class ApiService {
       return null;
     }
   }
-  delete(id: any) {
-    return this.http.delete('http://localhost:80/MarksApp/delete.php ' + {id}).toPromise();
-  }
 }

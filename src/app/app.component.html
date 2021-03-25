@@ -1,55 +1,61 @@
-<body>
-  <div class="topBar">
-    <h1>Mark Details App</h1>
-  </div>
-  <div class="innerBox">
-    <div class="inputs">
-      <div class="name">
-        <label for=".nameInput" style="color: black;text-shadow:2px 2px 2px rgb(204, 204, 204);font-weight: bolder;">Name:</label><br>
-        <input type="text" class="nameInput" [(ngModel)]="personName" #name="ngModel" required />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="topBar">
+  <h1>Mark Details App</h1>
+</div>
+<div class="innerBox">
+  <div class="inputs">
+    <div class="name">
+      <label for=".nameInput"
+        style="color: black;text-shadow:2px 2px 2px  rgb(204, 204, 204);font-weight: bolder;">Name:</label><br>
+      <input type="text" class="nameInput" [(ngModel)]="personName" #name="ngModel" required />
+    </div>
+    <div class="table">
+      <table border="1" class="inputTable">
+        <tr>
+          <th>Subject Name-Marks</th>
 
-      </div>
-      <div class="table">
-        <table border="1" class="inputTable">
-          <tr>
-            <th>Subject Name-Marks</th>
+          <!-- <th>Action</th> -->
 
-            <!-- <th>Action</th> -->
-          </tr>
-          <tr *ngFor="let x of studentDetail;index as i">
-            <textarea placeholder="Enter in Subject Name - Mark format" [(ngModel)]="subjectName"></textarea>
-            <!-- <td><input type="text" [(ngModel)]="x.subjectName" #note="ngModel" required />{{x.subName}}</td>
+        </tr>
+        <tr *ngFor="let x of studentDetail;index as i">
+          <textarea placeholder="Enter in Subject Name - Mark format" [(ngModel)]="subjectName" #name="ngModel"
+            required></textarea>
+
+          <!-- <td><input type="text" [(ngModel)]="x.subjectName" #note="ngModel" required />{{x.subName}}</td>
             <td><input type="number" [(ngModel)]="x.mark" #mark="ngModel"
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                 maxlength="3" required />{{x.marks}}</td> -->
-            <!-- <td>
+          <!-- <td>
               <button (click)="newRow()" [disabled]="note.invalid || mark.invalid">Add</button> 
                <button (click)="delete(i)">Delete</button>
             </td> -->
-          </tr>
-        </table>
-      </div>
-      <br>
-      <button class="save" *ngIf ="sava"  [disabled]="name.invalid" (click)="apiInsert();">Save</button><br>
-      <button class="update" *ngIf ="updata" [disabled]="name.invalid" (click)="update();">update</button>
-    </div>
-    <div class="output">
-      <table border="1">
-        <tr>
-          <th>S.No</th>
-          <th>Name</th>
-          <th>Subject Names & Marks</th>
-          <th>Action</th>
-        </tr>
-        <tr *ngFor="let x of list;index as i">
-          <td>{{x.id}}</td>
-          <td>{{x.Name}}</td>
-          <td>{{x.subjectAndMark}}</td>
-          <td>
-            <button (click)="edit(x)">Edit</button>
-            <button (click)="delete(x)">Delete</button>
-          </td>
+
         </tr>
       </table>
     </div>
-    <router-outlet></router-outlet>
+    <br>
+    <button class="save" *ngIf="sava" [disabled]="name.invalid || name.invalid" (click)="apiInsert();">💾 Save
+      <span class="tooltiptext">save</span>
+    </button><br>
+    <button class="update" *ngIf="updata" [disabled]="name.invalid" (click)="update();">update</button>
+  </div>
+  <div class="output">
+    <table border="1">
+      <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th style="width: 100px;">Subject Names & Marks</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let x of list;index as i">
+        <td>{{i+1}}</td>
+        <td>{{x.Name}}</td>
+        <td>{{x.subjectAndMark}}</td>
+        <td>
+          <button (click)="edit(x)">Edit</button>
+          <button (click)="delete(x)">🗑️ Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <router-outlet></router-outlet>

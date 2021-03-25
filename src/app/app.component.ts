@@ -6,6 +6,7 @@ import { ApiService } from './api.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   updata: any;
   sava: any;
@@ -22,7 +23,9 @@ export class AppComponent {
       subName: '',
     };
     this.studentDetail.push(x);
-    setInterval(() => { this.display(); }, 100);
+    setInterval(() => {
+      this.display();
+    }, 1000);
   }
 
   apiInsert() {
@@ -36,20 +39,22 @@ export class AppComponent {
     });
     this.display();
   }
+
   async display() {
     const res: any = await this.api.get('http://localhost:80/MarksApp/outputTable.php');
     this.list = res.data;
     this.sava = true;
-
   }
+
   edit(x: any) {
     this.updata = true;
     this.sava = false;
     this.id = x.id;
     this.personName = x.Name,
-    this.subjectName = x.subjectAndMark;
+      this.subjectName = x.subjectAndMark;
     this.display();
   }
+
   update() {
     this.api.post('http://localhost:80/MarksApp/update.php',
       {
@@ -67,9 +72,9 @@ export class AppComponent {
     this.updata = false;
     this.sava = true;
   }
-
+  
   delete(x) {
-    if (confirm("delete the item?") === true) {
+    if (confirm('delete the item?') === true) {
       this.api.post('http://localhost:80/MarksApp/delete.php', x).then((x) => {
         console.log('Item deleted', x);
       }).catch((x) => {
@@ -78,6 +83,7 @@ export class AppComponent {
       this.display();
     }
   }
+
 
   // save() {
   //   const x = {
