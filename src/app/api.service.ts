@@ -16,7 +16,6 @@ export class ApiService {
   }
   async post(url: string, data?: any) {
     try {
-
       const resp = await this.http.post(url, data, {
         headers: {
         },
@@ -27,23 +26,7 @@ export class ApiService {
       return null;
     }
   }
-  async delete(i: any) {
-    try {
-      return this.http.delete('http://localhost:80/MarksApp/delete.php' + { i }).toPromise();
-    }
-    catch{
-      console.log("error");
-    }
-  }
-  async put(url: string, data?: any) 
-  {
-    try 
-    {
-      const resp = await this.http.put(url, data, { headers: {},
-       }).toPromise();
-      return resp;
-    } catch (e) {
-      return null;
-    }
+  delete(id: any) {
+    return this.http.delete('http://localhost:80/MarksApp/delete.php ' + {id}).toPromise();
   }
 }

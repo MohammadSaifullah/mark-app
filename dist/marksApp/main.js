@@ -21,7 +21,7 @@ module.exports = __webpack_require__(/*! /Users/mac/marksApp/src/main.ts */"zUnb
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("*{\n    box-sizing: border-box;\n    font-family: 'Times New Roman', Times, serif;\n}\nbody{\n    margin: 0px;\n    background-image:url(https://wallpapercrafter.com/desktop/294109-books-student-study-education-university-studying.jpg);\n    height: 580px;\n    background-attachment: fixed;\n    background-position: center;\n    background-size: cover;\n    z-index: -1;\n}\n.topBar{\n    text-align: center;\n    height: 70px;\n    width: 100%;\n    border: solid transparent 1px;\n    background-color:lightyellow;\n    color: darkred;\n    font-family: 'Times New Roman';\n    z-index: 1;\n}\n.innerBox{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    margin-top: 100px;\n}\ntable{\n    border-collapse: collapse;\n    border: white 1px solid;\n}\nth{\n    background-color:darkred;\n    color: whitesmoke;\n    padding: 5px;\n}\ntd{\n    background-color:rgb(165, 1, 1);\n    color: whitesmoke;\n    padding: 5px;\n}\ntd input{\n    background: rgb(165, 1, 1);\n    border: transparent solid 1px;\n    color: whitesmoke;\n    font-weight: bolder;\n}\n.inputs{\n    display: flex;\n    flex-direction: column;\n    justify-content: space-around;\n   \n}\n.nameInput{\n    background-color: rgb(226, 223, 223);\n    height: 30px;\n    border-color: transparent;\n    width: 100%;\n    border-radius: 7px;\n}\n.save{\n    border:1px solid transparent;\n    \n    color: black;\n    height: 30px;\n    width: 40px;\n    text-align: center;\n}\n.save:active{\n    background-color: darkgrey;\n}\n.save:disabled{\n    color:white;\n}\n.name{\n    padding: 10px;\n    display: flex;\n    flex-grow: 1;\n    flex-shrink: 1;\n    flex-direction: column;\n}\n.name button{\n    margin-top: 10px;\n    margin-right: 0px;\n}\ntd button{\n    margin-left:5px ;\n    margin-right: 5px;\n    border: transparent solid 1px;\n}\n.output{\n    margin-top: 4%;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksc0JBQXNCO0lBQ3RCLDRDQUE0QztBQUNoRDtBQUNBO0lBQ0ksV0FBVztJQUNYLHVIQUF1SDtJQUN2SCxhQUFhO0lBQ2IsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQixzQkFBc0I7SUFDdEIsV0FBVztBQUNmO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFdBQVc7SUFDWCw2QkFBNkI7SUFDN0IsNEJBQTRCO0lBQzVCLGNBQWM7SUFDZCw4QkFBOEI7SUFDOUIsVUFBVTtBQUNkO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDZCQUE2QjtJQUM3QixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6Qix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLHdCQUF3QjtJQUN4QixpQkFBaUI7SUFDakIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksK0JBQStCO0lBQy9CLGlCQUFpQjtJQUNqQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSwwQkFBMEI7SUFDMUIsNkJBQTZCO0lBQzdCLGlCQUFpQjtJQUNqQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsNkJBQTZCOztBQUVqQztBQUNBO0lBQ0ksb0NBQW9DO0lBQ3BDLFlBQVk7SUFDWix5QkFBeUI7SUFDekIsV0FBVztJQUNYLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksNEJBQTRCOztJQUU1QixZQUFZO0lBQ1osWUFBWTtJQUNaLFdBQVc7SUFDWCxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLDBCQUEwQjtBQUM5QjtBQUNBO0lBQ0ksV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsYUFBYTtJQUNiLFlBQVk7SUFDWixjQUFjO0lBQ2Qsc0JBQXNCO0FBQzFCO0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksY0FBYztBQUNsQiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIip7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbmJvZHl7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoaHR0cHM6Ly93YWxscGFwZXJjcmFmdGVyLmNvbS9kZXNrdG9wLzI5NDEwOS1ib29rcy1zdHVkZW50LXN0dWR5LWVkdWNhdGlvbi11bml2ZXJzaXR5LXN0dWR5aW5nLmpwZyk7XG4gICAgaGVpZ2h0OiA1ODBweDtcbiAgICBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGZpeGVkO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHotaW5kZXg6IC0xO1xufVxuLnRvcEJhcntcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgaGVpZ2h0OiA3MHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlcjogc29saWQgdHJhbnNwYXJlbnQgMXB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6bGlnaHR5ZWxsb3c7XG4gICAgY29sb3I6IGRhcmtyZWQ7XG4gICAgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nO1xuICAgIHotaW5kZXg6IDE7XG59XG4uaW5uZXJCb3h7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIG1hcmdpbi10b3A6IDEwMHB4O1xufVxudGFibGV7XG4gICAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcbiAgICBib3JkZXI6IHdoaXRlIDFweCBzb2xpZDtcbn1cbnRoe1xuICAgIGJhY2tncm91bmQtY29sb3I6ZGFya3JlZDtcbiAgICBjb2xvcjogd2hpdGVzbW9rZTtcbiAgICBwYWRkaW5nOiA1cHg7XG59XG50ZHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOnJnYigxNjUsIDEsIDEpO1xuICAgIGNvbG9yOiB3aGl0ZXNtb2tlO1xuICAgIHBhZGRpbmc6IDVweDtcbn1cbnRkIGlucHV0e1xuICAgIGJhY2tncm91bmQ6IHJnYigxNjUsIDEsIDEpO1xuICAgIGJvcmRlcjogdHJhbnNwYXJlbnQgc29saWQgMXB4O1xuICAgIGNvbG9yOiB3aGl0ZXNtb2tlO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkZXI7XG59XG4uaW5wdXRze1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgIFxufVxuLm5hbWVJbnB1dHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjI2LCAyMjMsIDIyMyk7XG4gICAgaGVpZ2h0OiAzMHB4O1xuICAgIGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYm9yZGVyLXJhZGl1czogN3B4O1xufVxuLnNhdmV7XG4gICAgYm9yZGVyOjFweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgICBcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgaGVpZ2h0OiAzMHB4O1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5zYXZlOmFjdGl2ZXtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrZ3JleTtcbn1cbi5zYXZlOmRpc2FibGVke1xuICAgIGNvbG9yOndoaXRlO1xufVxuLm5hbWV7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZ3JvdzogMTtcbiAgICBmbGV4LXNocmluazogMTtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuXG4ubmFtZSBidXR0b257XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDBweDtcbn1cbnRkIGJ1dHRvbntcbiAgICBtYXJnaW4tbGVmdDo1cHggO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xuICAgIGJvcmRlcjogdHJhbnNwYXJlbnQgc29saWQgMXB4O1xufVxuLm91dHB1dHtcbiAgICBtYXJnaW4tdG9wOiA0JTtcbn1cbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("*{\n    box-sizing: border-box;\n    font-family: 'Times New Roman', Times, serif;\n}\nbody{\n    margin: 0px;\n    height: 580px;\n    background-attachment: fixed;\n    background-position: center;\n    background-size: cover;\n    z-index: -1;\n}\n.topBar{\n    text-align: center;\n    height: 70px;\n    width: 100%;\n    border: solid transparent 1px;\n    background-color:lightyellow;\n    color: darkred;\n    font-family: 'Times New Roman';\n    z-index: 1;\n}\n.innerBox{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    margin-top: 100px;\n}\ntable{\n    border-collapse: collapse;\n    border: white 1px solid;\n}\nth{\n    background-color:darkred;\n    color: whitesmoke;\n    padding: 5px;\n}\ntd{\n    background-color:ghostwhite;\n    color: darkred;\n    padding: 5px;\n    text-align: center;\n}\ntextarea{\n    background-color: ghostwhite;\n    color: darkred;\n    height: 100%;\n    border: transparent 1px solid;\n\n}\ntd input{\n    background: rgb(165, 1, 1);\n    border: transparent solid 1px;\n    color: whitesmoke;\n    font-weight: bolder;\n}\n.inputs{\n    display: flex;\n    flex-direction: column;\n}\n.nameInput{\n    background-color: rgb(226, 223, 223);\n    height: 30px;\n    border-color: transparent;\n    width: 100%;\n    border-radius: 7px;\n    \n}\n.save{\n    border:1px solid transparent;\n    \n    color: black;\n    height: 30px;\n    width: 40px;\n    text-align: center;\n}\n.save:active{\n    background-color: darkgrey;\n}\n.save:disabled{\n    color:white;\n}\n.update{\n    border:1px solid transparent;\n    \n    color: black;\n    height: 30px;\n    width: 50px;\n    text-align: center;\n}\n.update:active{\n    background-color: darkgrey;\n}\n.update:disabled{\n    color:white;\n}\n.name{\n    display: flex;\n    flex-grow: 1;\n    flex-shrink: 1;\n    flex-direction: column;\n    height: 100px;\n    position: absolute;\n}\n.name button{\n    margin-top: 10px;\n    margin-right: 0px;\n}\ntd button{\n    margin-left:5px ;\n    margin-right: 5px;\n    border: transparent solid 1px;\n}\n.output{\n    margin-top: 4%;\n}\n.inputTable{\n    margin-top: 100px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksc0JBQXNCO0lBQ3RCLDRDQUE0QztBQUNoRDtBQUNBO0lBQ0ksV0FBVztJQUNYLGFBQWE7SUFDYiw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLHNCQUFzQjtJQUN0QixXQUFXO0FBQ2Y7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osV0FBVztJQUNYLDZCQUE2QjtJQUM3Qiw0QkFBNEI7SUFDNUIsY0FBYztJQUNkLDhCQUE4QjtJQUM5QixVQUFVO0FBQ2Q7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsNkJBQTZCO0lBQzdCLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksd0JBQXdCO0lBQ3hCLGlCQUFpQjtJQUNqQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSwyQkFBMkI7SUFDM0IsY0FBYztJQUNkLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLDRCQUE0QjtJQUM1QixjQUFjO0lBQ2QsWUFBWTtJQUNaLDZCQUE2Qjs7QUFFakM7QUFDQTtJQUNJLDBCQUEwQjtJQUMxQiw2QkFBNkI7SUFDN0IsaUJBQWlCO0lBQ2pCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksb0NBQW9DO0lBQ3BDLFlBQVk7SUFDWix5QkFBeUI7SUFDekIsV0FBVztJQUNYLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLDRCQUE0Qjs7SUFFNUIsWUFBWTtJQUNaLFlBQVk7SUFDWixXQUFXO0lBQ1gsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSwwQkFBMEI7QUFDOUI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksNEJBQTRCOztJQUU1QixZQUFZO0lBQ1osWUFBWTtJQUNaLFdBQVc7SUFDWCxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLDBCQUEwQjtBQUM5QjtBQUNBO0lBQ0ksV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsWUFBWTtJQUNaLGNBQWM7SUFDZCxzQkFBc0I7SUFDdEIsYUFBYTtJQUNiLGtCQUFrQjtBQUN0QjtBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGlCQUFpQjtJQUNqQiw2QkFBNkI7QUFDakM7QUFDQTtJQUNJLGNBQWM7QUFDbEI7QUFDQTtJQUNJLGlCQUFpQjtBQUNyQiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIip7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZjtcbn1cbmJvZHl7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgaGVpZ2h0OiA1ODBweDtcbiAgICBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IGZpeGVkO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHotaW5kZXg6IC0xO1xufVxuLnRvcEJhcntcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgaGVpZ2h0OiA3MHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlcjogc29saWQgdHJhbnNwYXJlbnQgMXB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6bGlnaHR5ZWxsb3c7XG4gICAgY29sb3I6IGRhcmtyZWQ7XG4gICAgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nO1xuICAgIHotaW5kZXg6IDE7XG59XG4uaW5uZXJCb3h7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIG1hcmdpbi10b3A6IDEwMHB4O1xufVxudGFibGV7XG4gICAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcbiAgICBib3JkZXI6IHdoaXRlIDFweCBzb2xpZDtcbn1cbnRoe1xuICAgIGJhY2tncm91bmQtY29sb3I6ZGFya3JlZDtcbiAgICBjb2xvcjogd2hpdGVzbW9rZTtcbiAgICBwYWRkaW5nOiA1cHg7XG59XG50ZHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmdob3N0d2hpdGU7XG4gICAgY29sb3I6IGRhcmtyZWQ7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbnRleHRhcmVhe1xuICAgIGJhY2tncm91bmQtY29sb3I6IGdob3N0d2hpdGU7XG4gICAgY29sb3I6IGRhcmtyZWQ7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIGJvcmRlcjogdHJhbnNwYXJlbnQgMXB4IHNvbGlkO1xuXG59XG50ZCBpbnB1dHtcbiAgICBiYWNrZ3JvdW5kOiByZ2IoMTY1LCAxLCAxKTtcbiAgICBib3JkZXI6IHRyYW5zcGFyZW50IHNvbGlkIDFweDtcbiAgICBjb2xvcjogd2hpdGVzbW9rZTtcbiAgICBmb250LXdlaWdodDogYm9sZGVyO1xufVxuLmlucHV0c3tcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ubmFtZUlucHV0e1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjYsIDIyMywgMjIzKTtcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgYm9yZGVyLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBib3JkZXItcmFkaXVzOiA3cHg7XG4gICAgXG59XG4uc2F2ZXtcbiAgICBib3JkZXI6MXB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIFxuICAgIGNvbG9yOiBibGFjaztcbiAgICBoZWlnaHQ6IDMwcHg7XG4gICAgd2lkdGg6IDQwcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLnNhdmU6YWN0aXZle1xuICAgIGJhY2tncm91bmQtY29sb3I6IGRhcmtncmV5O1xufVxuLnNhdmU6ZGlzYWJsZWR7XG4gICAgY29sb3I6d2hpdGU7XG59XG4udXBkYXRle1xuICAgIGJvcmRlcjoxcHggc29saWQgdHJhbnNwYXJlbnQ7XG4gICAgXG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGhlaWdodDogMzBweDtcbiAgICB3aWR0aDogNTBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4udXBkYXRlOmFjdGl2ZXtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrZ3JleTtcbn1cbi51cGRhdGU6ZGlzYWJsZWR7XG4gICAgY29sb3I6d2hpdGU7XG59XG4ubmFtZXtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZ3JvdzogMTtcbiAgICBmbGV4LXNocmluazogMTtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGhlaWdodDogMTAwcHg7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xufVxuXG4ubmFtZSBidXR0b257XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDBweDtcbn1cbnRkIGJ1dHRvbntcbiAgICBtYXJnaW4tbGVmdDo1cHggO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xuICAgIGJvcmRlcjogdHJhbnNwYXJlbnQgc29saWQgMXB4O1xufVxuLm91dHB1dHtcbiAgICBtYXJnaW4tdG9wOiA0JTtcbn1cbi5pbnB1dFRhYmxle1xuICAgIG1hcmdpbi10b3A6IDEwMHB4O1xufVxuIl19 */");
 
 /***/ }),
 
@@ -67,42 +67,85 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _raw_loader_app_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./app.component.html */ "VzVu");
 /* harmony import */ var _app_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component.css */ "A3xY");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _api_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./api.service */ "yTNM");
+
 
 
 
 
 let AppComponent = class AppComponent {
-    constructor() {
+    constructor(api) {
+        this.api = api;
         this.title = 'marksApp';
+        this.subjectName = '';
+        this.personName = '';
         this.studentDetail = [];
         this.outputTable = [];
+        this.list = [];
         const x = {
-            subjectName: '',
-            mark: ''
+            subName: '',
         };
         this.studentDetail.push(x);
+        setInterval(() => { this.display(); }, 100);
     }
-    save() {
-        const x = {
-            studentName: this.personName,
-            opSub: this.studentDetail
-        };
-        this.outputTable.push(x);
-        console.table(this.outputTable);
+    apiInsert() {
+        this.api.post('http://localhost:80/MarksApp/insert.php', {
+            name: this.personName,
+            sub: this.subjectName
+        }).then((x) => {
+            console.log('Item Saved', x);
+        }).catch((x) => {
+            console.error('Error is', x);
+        });
+        this.display();
     }
-    newRow() {
-        const x = {
-            subjectName: this.subjectName,
-            mark: this.mark
-        };
-        this.studentDetail.push(x);
-        console.log(this.studentDetail);
+    display() {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            let res = yield this.api.get('http://localhost:80/MarksApp/outputTable.php');
+            this.list = res.data;
+            this.sava = true;
+        });
     }
-    delete(i) {
-        this.studentDetail.splice(i, 1);
+    edit(x) {
+        this.updata = true;
+        this.sava = false;
+        this.id = x.id;
+        this.personName = x.Name,
+            this.subjectName = x.subjectAndMark;
+        this.display();
+    }
+    update() {
+        this.api.post("http://localhost:80/MarksApp/update.php", {
+            id: this.id,
+            name: this.personName,
+            sub: this.subjectName,
+        }).then((x) => {
+            console.log('Item Saved', x);
+            this.display();
+        }).catch((x) => {
+            console.error('Error is', x);
+        });
+        this.display();
+        this.updata = false;
+        this.sava = true;
+    }
+    deleteOutput(i) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            let res = yield this.api.get('http://localhost:80/MarksApp/outputTable.php');
+            console.log(res.data);
+            this.list = yield this.api.post('http://localhost:80/MarksApp/delete.php').then(this.list.splice(i, 1));
+            console.log(this.list);
+            this.display();
+            // this.list = this.api.get('http://localhost:80/MarksApp/outputTable.php');
+            // // let a = this.list.splice(i, 1);
+            // alert("recordd");
+            // console.log(this.list.data);
+        });
     }
 };
-AppComponent.ctorParameters = () => [];
+AppComponent.ctorParameters = () => [
+    { type: _api_service__WEBPACK_IMPORTED_MODULE_4__["ApiService"] }
+];
 AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
         selector: 'app-root',
@@ -124,7 +167,7 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<body>\n  <div class=\"topBar\">\n    <h1>Mark Details App</h1>\n  </div>\n  <div class=\"innerBox\">\n    <div class=\"inputs\">\n      <div class=\"name\">\n        <label for=\".nameInput\" style=\"color: white;font-weight: bolder;\">Name:</label><br>\n        <input type=\"text\" class=\"nameInput\" [(ngModel)]=\"personName\" #name=\"ngModel\" required />\n\n      </div>\n      <div class=\"table\">\n        <table border=\"1\">\n          <tr>\n            <th>Subject Name</th>\n            <th>Marks</th>\n            <th>Action</th>\n          </tr>\n          <tr *ngFor=\"let x of studentDetail;index as i\">\n            <td><input type=\"text\" [(ngModel)]=\"x.subjectName\" #note=\"ngModel\" required />{{x.subName}}</td>\n            <td><input type=\"number\" [(ngModel)]=\"x.mark\" #mark=\"ngModel\"\n                oninput=\"javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);\"\n                maxlength=\"3\" required />{{x.marks}}</td>\n            <td>\n              <button (click)=\"newRow()\" [disabled]=\"note.invalid || mark.invalid\">Add</button>\n              <button (click)=\"delete(i)\">Delete</button>\n            </td>\n          </tr>\n        </table>\n      </div>\n      <br>\n      <button class=\"save\" [disabled]=\"name.invalid\" (click)=\"save()\">Save</button>\n    </div>\n    <div class=\"output\">\n      <table border=\"1\">\n        <tr>\n          <th>Name</th>\n          <th>Subject Names & Marks</th>\n          <th>Action</th>\n        </tr>\n        <tr *ngFor=\"let x of outputTable;index as i\">\n          <td>{{x.studentName}}</td>\n          <td>{{x.opSub[i].subjectName}}-{{x.opSub[i].mark}}</td>\n          <td>\n            <button>Edit</button>\n            <button>Delete</button>\n          </td>\n        </tr>\n      </table>\n    </div>\n    <router-outlet></router-outlet>");
+/* harmony default export */ __webpack_exports__["default"] = ("<body>\n  <div class=\"topBar\">\n    <h1>Mark Details App</h1>\n  </div>\n  <div class=\"innerBox\">\n    <div class=\"inputs\">\n      <div class=\"name\">\n        <label for=\".nameInput\" style=\"color: darkred;font-weight: bolder;\">Name:</label><br>\n        <input type=\"text\" class=\"nameInput\" [(ngModel)]=\"personName\" #name=\"ngModel\" required />\n\n      </div>\n      <div class=\"table\">\n        <table border=\"1\" class=\"inputTable\">\n          <tr>\n            <th>Subject Name-Marks</th>\n\n            <!-- <th>Action</th> -->\n          </tr>\n          <tr *ngFor=\"let x of studentDetail;index as i\">\n            <textarea placeholder=\"Enter in Subject Name - Mark format\" [(ngModel)]=\"subjectName\"></textarea>\n            <!-- <td><input type=\"text\" [(ngModel)]=\"x.subjectName\" #note=\"ngModel\" required />{{x.subName}}</td>\n            <td><input type=\"number\" [(ngModel)]=\"x.mark\" #mark=\"ngModel\"\n                oninput=\"javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);\"\n                maxlength=\"3\" required />{{x.marks}}</td> -->\n            <!-- <td>\n              <button (click)=\"newRow()\" [disabled]=\"note.invalid || mark.invalid\">Add</button> \n               <button (click)=\"delete(i)\">Delete</button>\n            </td> -->\n          </tr>\n        </table>\n      </div>\n      <br>\n      <button class=\"save\" *ngIf =\"sava\"  [disabled]=\"name.invalid\" (click)=\"apiInsert();\">Save</button><br>\n      <button class=\"update\" *ngIf =\"updata\" [disabled]=\"name.invalid\" (click)=\"update();\">update</button>\n    </div>\n    <div class=\"output\">\n      <table border=\"1\">\n        <tr>\n          <th>S.No</th>\n          <th>Name</th>\n          <th>Subject Names & Marks</th>\n          <th>Action</th>\n        </tr>\n        <tr *ngFor=\"let x of list;index as i\">\n          <td>{{x.id}}</td>\n          <td>{{x.Name}}</td>\n          <td>{{x.subjectAndMark}}</td>\n          <td>\n            <button (click)=\"edit(x)\">Edit</button>\n            <button (click)=\"deleteOutput(i)\">Delete</button>\n          </td>\n        </tr>\n      </table>\n    </div>\n    <router-outlet></router-outlet>");
 
 /***/ }),
 
@@ -145,6 +188,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "Sy1n");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
 
 
 
@@ -163,7 +208,8 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"]
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"],
+            _angular_common__WEBPACK_IMPORTED_MODULE_7__["CommonModule"]
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -199,6 +245,85 @@ AppRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
     })
 ], AppRoutingModule);
+
+
+
+/***/ }),
+
+/***/ "yTNM":
+/*!********************************!*\
+  !*** ./src/app/api.service.ts ***!
+  \********************************/
+/*! exports provided: ApiService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApiService", function() { return ApiService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+
+
+
+let ApiService = class ApiService {
+    constructor(http) {
+        this.http = http;
+    }
+    get(url) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            try {
+                return this.http.get(url).toPromise();
+            }
+            catch (e) {
+                return null;
+            }
+        });
+    }
+    post(url, data) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            try {
+                const resp = yield this.http.post(url, data, {
+                    headers: {},
+                }).toPromise();
+                return resp;
+            }
+            catch (e) {
+                return null;
+            }
+        });
+    }
+    delete(i) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            try {
+                return this.http.delete('http://localhost:80/MarksApp/delete.php' + { i }).toPromise();
+            }
+            catch (_a) {
+                console.log("error");
+            }
+        });
+    }
+    put(url, data) {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            try {
+                const resp = yield this.http.put(url, data, { headers: {},
+                }).toPromise();
+                return resp;
+            }
+            catch (e) {
+                return null;
+            }
+        });
+    }
+};
+ApiService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+ApiService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ApiService);
 
 
 

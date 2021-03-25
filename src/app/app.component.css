@@ -4,11 +4,13 @@
 }
 body{
     margin: 0px;
-    height: 580px;
+    height:500pt;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     z-index: -1;
+    background-image: url(https://i.pinimg.com/originals/d3/b2/09/d3b209c68bc63649d173cd05ae9146ca.jpg);
 }
 .topBar{
     text-align: center;
@@ -40,6 +42,8 @@ td{
     color: darkred;
     padding: 5px;
     text-align: center;
+    word-wrap:break-word;
+    width: 10px;
 }
 textarea{
     background-color: ghostwhite;
@@ -59,7 +63,7 @@ td input{
     flex-direction: column;
 }
 .nameInput{
-    background-color: rgb(226, 223, 223);
+    background-color: darkgray;
     height: 30px;
     border-color: transparent;
     width: 100%;

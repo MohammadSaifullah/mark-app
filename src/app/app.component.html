@@ -5,7 +5,7 @@
   <div class="innerBox">
     <div class="inputs">
       <div class="name">
-        <label for=".nameInput" style="color: darkred;font-weight: bolder;">Name:</label><br>
+        <label for=".nameInput" style="color: black;text-shadow:2px 2px 2px rgb(204, 204, 204);font-weight: bolder;">Name:</label><br>
         <input type="text" class="nameInput" [(ngModel)]="personName" #name="ngModel" required />
 
       </div>
@@ -47,7 +47,7 @@
           <td>{{x.subjectAndMark}}</td>
           <td>
             <button (click)="edit(x)">Edit</button>
-            <button (click)="deleteOutput(i)">Delete</button>
+            <button (click)="delete(x)">Delete</button>
           </td>
         </tr>
       </table>

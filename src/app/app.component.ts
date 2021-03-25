@@ -22,7 +22,7 @@ export class AppComponent {
       subName: '',
     };
     this.studentDetail.push(x);
-    setInterval(() => { this.display() }, 100);
+    setInterval(() => { this.display(); }, 100);
   }
 
   apiInsert() {
@@ -37,7 +37,7 @@ export class AppComponent {
     this.display();
   }
   async display() {
-    let res: any = await this.api.get('http://localhost:80/MarksApp/outputTable.php');
+    const res: any = await this.api.get('http://localhost:80/MarksApp/outputTable.php');
     this.list = res.data;
     this.sava = true;
 
@@ -45,19 +45,19 @@ export class AppComponent {
   edit(x: any) {
     this.updata = true;
     this.sava = false;
-    this.id = x.id
+    this.id = x.id;
     this.personName = x.Name,
-      this.subjectName = x.subjectAndMark
+    this.subjectName = x.subjectAndMark;
     this.display();
   }
   update() {
-    this.api.post("http://localhost:80/MarksApp/update.php",
+    this.api.post('http://localhost:80/MarksApp/update.php',
       {
         id: this.id,
         name: this.personName,
         sub: this.subjectName,
       }).then((x) => {
-        console.log('Item Saved', x);
+        console.log('Item Updated', x);
         this.display();
 
       }).catch((x) => {
@@ -67,19 +67,16 @@ export class AppComponent {
     this.updata = false;
     this.sava = true;
   }
-  async deleteOutput(i: any) {
-    let res: any = await this.api.get('http://localhost:80/MarksApp/outputTable.php');
-    console.log(res.data);
 
-    this.list = await this.api.post('http://localhost:80/MarksApp/delete.php').then(this.list.splice(i, 1));
-    console.log(this.list);
-
-    this.display();
-
-    // this.list = this.api.get('http://localhost:80/MarksApp/outputTable.php');
-    // // let a = this.list.splice(i, 1);
-    // alert("recordd");
-    // console.log(this.list.data);
+  delete(x) {
+    if (confirm("delete the item?") === true) {
+      this.api.post('http://localhost:80/MarksApp/delete.php', x).then((x) => {
+        console.log('Item deleted', x);
+      }).catch((x) => {
+        console.error('Error is', x);
+      });
+      this.display();
+    }
   }
 
   // save() {
