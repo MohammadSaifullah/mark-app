@@ -8,10 +8,11 @@ import { ApiService } from './api.service';
 })
 
 export class AppComponent {
-  updata: any;
-  sava: any;
+  updateButton: any;
+  saveButton: any;
   title = 'marksApp';
   subjectName = '';
+  mark = '';
   personName = '';
   studentDetail: Array<any> = [];
   outputTable: Array<any> = [];
@@ -20,35 +21,47 @@ export class AppComponent {
   id: any;
   constructor(private api: ApiService) {
     const x = {
-      subName: '',
+      sub: '',
     };
     this.studentDetail.push(x);
-    setInterval(() => {
-      this.display();
-    }, 1000);
+
+    setInterval(()=> {this.display();},1000);
+
   }
 
   apiInsert() {
     this.api.post('http://localhost:80/MarksApp/insert.php', {
       name: this.personName,
-      sub: this.subjectName
+      sub: JSON.stringify(this.studentDetail)
     }).then((x) => {
       console.log('Item Saved', x);
     }).catch((x) => {
       console.error('Error is', x);
     });
     this.display();
+    let obj = this.list.filter((a:any)=>a.type === 'mark');
+     console.log(obj);
+     this.mark = obj.reduce((a:number,b:any)=>{
+        return a + parseInt(b.mark);
+      },0);
   }
 
   async display() {
     const res: any = await this.api.get('http://localhost:80/MarksApp/outputTable.php');
-    this.list = res.data;
-    this.sava = true;
+
+    let list = [];
+    res.data.forEach(element => {
+      element.markList = JSON.parse(element.subjectAndMark);
+      console.log(element);
+      list.push(element);
+      this.list = list;
+    });
+    this.saveButton = true;
   }
 
   edit(x: any) {
-    this.updata = true;
-    this.sava = false;
+    this.updateButton = true;
+    this.saveButton = false;
     this.id = x.id;
     this.personName = x.Name,
       this.subjectName = x.subjectAndMark;
@@ -69,10 +82,10 @@ export class AppComponent {
         console.error('Error is', x);
       });
     this.display();
-    this.updata = false;
-    this.sava = true;
+    this.updateButton = false;
+    this.saveButton = true;
   }
-  
+
   delete(x) {
     if (confirm('delete the item?') === true) {
       this.api.post('http://localhost:80/MarksApp/delete.php', x).then((x) => {
@@ -81,10 +94,16 @@ export class AppComponent {
         console.error('Error is', x);
       });
       this.display();
+      this.personName = ''
+      this.subjectName = ''
     }
   }
-
-
+newRow() {
+    const x = {
+      subjectName: this.subjectName,
+    };
+    this.studentDetail.push(x);
+  }
   // save() {
   //   const x = {
   //     studentName: this.personName,
@@ -92,15 +111,8 @@ export class AppComponent {
   //   };
   //   this.outputTable.push(x);
   //   console.table(this.outputTable);
-  //   // api call
   // }
-  // newRow() {
-  //   const x = {
-  //     subjectName: this.subjectName,
-  //   };
-  //   this.studentDetail.push(x);
-  //   console.log(this.studentDetail);
-  // }
+  
   // delete(i: any) {
   //   this.studentDetail.splice(i, 1);
   // }

@@ -9,7 +9,7 @@ $data = json_decode($request_body, true);
     $id = $data['id'];
     $name = $data['name'];
     $sub = $data['sub'];
-    $ins = "UPDATE markTable SET Name = '$name', subjectAndMark= '$sub' WHERE id = '$id'";
+    $update = "UPDATE markTable SET Name = '$name', subjectAndMark= '$sub' WHERE id = '$id'";
     if (!$name) {
         $resp = array(
             'success' => false,
@@ -20,7 +20,7 @@ $data = json_decode($request_body, true);
         echo json_encode($resp);  
         exit;      
     }
-    $err = $conn->query($ins);
+    $err = $conn->query($update);
     $resp = array(
         'success' => true,
         'message' => 'Added successfully!!',

@@ -5,6 +5,7 @@ header('Access-Control-Allow-Headers: X-Requested-With, content-type, access-con
 include('dbconnection.php');
 $request_body = file_get_contents('php://input');
 $data = json_decode($request_body, true);
+print_r($data['sub']);
     $name = $data['name'];
     $sub = $data['sub'];
     $ins = "INSERT INTO markTable (Name,subjectAndMark) VALUES ( '$name','$sub' )";

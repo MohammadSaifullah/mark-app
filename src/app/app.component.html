@@ -12,32 +12,26 @@
     <div class="table">
       <table border="1" class="inputTable">
         <tr>
-          <th>Subject Name-Marks</th>
-
-          <!-- <th>Action</th> -->
-
+          <th>Subject Name</th>
+          <th>Marks</th>
+          <th>Action</th>
         </tr>
         <tr *ngFor="let x of studentDetail;index as i">
-          <textarea placeholder="Enter in Subject Name - Mark format" [(ngModel)]="subjectName" #name="ngModel"
-            required></textarea>
-
-          <!-- <td><input type="text" [(ngModel)]="x.subjectName" #note="ngModel" required />{{x.subName}}</td>
-            <td><input type="number" [(ngModel)]="x.mark" #mark="ngModel"
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                maxlength="3" required />{{x.marks}}</td> -->
-          <!-- <td>
-              <button (click)="newRow()" [disabled]="note.invalid || mark.invalid">Add</button> 
-               <button (click)="delete(i)">Delete</button>
-            </td> -->
-
+          <td><input type="text" [(ngModel)]="x.subjectName" #note="ngModel" required />{{x.subName}}</td>
+          <td><input type="number" [(ngModel)]="x.mark" #mark="ngModel"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength="3" required />{{x.marks}}</td>
+          <td>
+            <button (click)="newRow()" [disabled]="note.invalid ">Add</button>
+            <button (click)="delete(i)">Delete</button>
+          </td>
         </tr>
       </table>
     </div>
     <br>
-    <button class="save" *ngIf="sava" [disabled]="name.invalid || name.invalid" (click)="apiInsert();">💾 Save
-      <span class="tooltiptext">save</span>
-    </button><br>
-    <button class="update" *ngIf="updata" [disabled]="name.invalid" (click)="update();">update</button>
+    <button class="save" *ngIf="saveButton" [disabled]="name.invalid" (click)="apiInsert();">💾 Save</button><br>
+    <button class="update" *ngIf="updateButton" [disabled]="name.invalid" (click)="update();">update</button>
+    <h1>Your total is:</h1>
   </div>
   <div class="output">
     <table border="1">
@@ -47,10 +41,16 @@
         <th style="width: 100px;">Subject Names & Marks</th>
         <th>Action</th>
       </tr>
-      <tr *ngFor="let x of list;index as i">
+      <tr *ngFor="let x of list ;index as i">
         <td>{{i+1}}</td>
         <td>{{x.Name}}</td>
-        <td>{{x.subjectAndMark}}</td>
+        <td>
+          <table>
+            <tr *ngFor="let y of x.markList">
+              <td>{{y.subjectName}}-{{y.mark}}</td>
+            </tr>
+          </table>
+        </td>
         <td>
           <button (click)="edit(x)">Edit</button>
           <button (click)="delete(x)">🗑️ Delete</button>

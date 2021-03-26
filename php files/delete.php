@@ -9,7 +9,7 @@ header('Access-Control-Allow-Headers: X-Requested-With, content-type, access-con
 $request_body = file_get_contents('php://input');
 $data = json_decode($request_body, true);
     $id = $data['id'];
-    $ins = "DELETE FROM markTable WHERE id = '$id'";
+    $delete = "DELETE FROM markTable WHERE id = '$id'";
     if (!$id) {
         $resp = array(
             'success' => false,
@@ -20,7 +20,7 @@ $data = json_decode($request_body, true);
         echo json_encode($resp);  
         exit;      
     }
-    $err = $conn->query($ins);
+    $err = $conn->query($delete);
     $resp = array(
         'success' => true,
         'message' => 'Deleted successfully!!',
