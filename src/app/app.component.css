@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 table{
     border-collapse: collapse;
@@ -107,8 +107,9 @@ td button{
     border: transparent solid 1px;
 }
 .output{
-    margin-top: 4%;
+    margin-top: 1%;
     height: 100%;
+    margin-right: 100px;
     overflow-y: scroll;
 }
 .inputTable{
@@ -117,25 +118,25 @@ td button{
 .submark{
     width: 50px;
 }
-.save .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-    opacity: 0;
-    transition: opacity 1s;
-  }
-.save .tooltiptext:hover{
-    visibility: visible;
-    opacity: 1;
-  }
+
+h3{
+    width: 50px;
+    border: transparent solid;
+    background-color: transparent;
+    font-weight: bolder;
+    color: darkred;
+}
+h3 input{
+    width: 50px;
+    border: transparent solid;
+    background-color: transparent;
+    font-weight: bolder;
+    color: darkred;
+}
+.title th button{
+    color: white;
+    background-color: transparent;
+    border: transparent solid;
+    margin: 0px;
+    font-weight: bolder;
+}

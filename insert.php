@@ -7,8 +7,13 @@ $request_body = file_get_contents('php://input');
 $data = json_decode($request_body, true);
 print_r($data['sub']);
     $name = $data['name'];
-    $sub = $data['sub'];
-    $ins = "INSERT INTO markTable (Name,subjectAndMark) VALUES ( '$name','$sub' )";
+    $tamil = $data['tamil'];
+    $english = $data['english'];
+    $maths = $data['maths'];
+    $science = $data['science'];
+    $social = $data['social'];
+    $total = $data['total'];
+    $ins = "INSERT INTO markTable (name,tamil,english,maths,science,social,total) VALUES ( '$name','$tamil','$english','$maths','$science','$social','$total')";
     if (!$name) {
         $resp = array(
             'success' => false,

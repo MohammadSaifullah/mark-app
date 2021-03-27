@@ -8,8 +8,13 @@ $request_body = file_get_contents('php://input');
 $data = json_decode($request_body, true);
     $id = $data['id'];
     $name = $data['name'];
-    $sub = $data['sub'];
-    $update = "UPDATE markTable SET Name = '$name', subjectAndMark= '$sub' WHERE id = '$id'";
+    $tamil = $data['tamil'];
+    $english = $data['english'];
+    $maths = $data['maths'];
+    $science = $data['science'];
+    $social = $data['social'];
+    $total = $data['total'];
+    $update = "UPDATE markTable SET name = '$name', tamil='$tamil', english='$english', maths='$maths', science='$science', social='$social', total='$total' WHERE id = '$id'";
     if (!$name) {
         $resp = array(
             'success' => false,

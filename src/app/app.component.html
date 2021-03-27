@@ -2,58 +2,93 @@
 <div class="topBar">
   <h1>Mark Details App</h1>
 </div>
+
 <div class="innerBox">
+
+  <!--div for student name the input marks-->
   <div class="inputs">
     <div class="name">
       <label for=".nameInput"
-        style="color: black;text-shadow:2px 2px 2px  rgb(204, 204, 204);font-weight: bolder;">Name:</label><br>
+        style="color: linen;text-shadow:2px 2px 2px  rgb(204, 204, 204);font-weight: bolder;">Name:</label><br>
       <input type="text" class="nameInput" [(ngModel)]="personName" #name="ngModel" required />
     </div>
+
     <div class="table">
       <table border="1" class="inputTable">
         <tr>
           <th>Subject Name</th>
           <th>Marks</th>
-          <th>Action</th>
         </tr>
-        <tr *ngFor="let x of studentDetail;index as i">
-          <td><input type="text" [(ngModel)]="x.subjectName" #note="ngModel" required />{{x.subName}}</td>
-          <td><input type="number" [(ngModel)]="x.mark" #mark="ngModel"
+
+        <!--inputs for subjects and mark-->
+        <tr>
+          <td>Tamil</td>
+          <td><input type="number" [(ngModel)]="tamil" min="1" max="100"
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              maxlength="3" required />{{x.marks}}</td>
-          <td>
-            <button (click)="newRow()" [disabled]="note.invalid ">Add</button>
-            <button (click)="delete(i)">Delete</button>
-          </td>
+              maxlength="3" #note="ngModel" required /></td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td><input type="number" [(ngModel)]="english" min="1" max="100"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength="3" #note="ngModel" required /></td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td><input type="number" [(ngModel)]="maths" min="1" max="100"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength="3" #note="ngModel" required /></td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td><input type="number" [(ngModel)]="science" min="1" max="100"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength="3" #note="ngModel" required /></td>
+        </tr>
+        <tr>
+          <td>Social</td>
+          <td><input type="number" [(ngModel)]="social" min="1" max="100"
+              oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              maxlength="3" #note="ngModel" required /></td>
         </tr>
       </table>
-    </div>
-    <br>
-    <button class="save" *ngIf="saveButton" [disabled]="name.invalid" (click)="apiInsert();">💾 Save</button><br>
-    <button class="update" *ngIf="updateButton" [disabled]="name.invalid" (click)="update();">update</button>
-    <h1>Your total is:</h1>
+    </div><br>
+
+    <button class="save" [disabled]="name.invalid" (click)="insertDetails();">💾 Save</button><br>
+    <button class="update" *ngIf="updateButton" [disabled]="name.invalid" (click)="updateDetails();">Update</button>
+    <h3>Total mark {{personName}}:<input type="number" [(ngModel)]="total" value={{total}}>
+    </h3>
   </div>
+
+  <!--outputs displayed from thedatabase inside a table-->
   <div class="output">
     <table border="1">
-      <tr>
-        <th>S.No</th>
-        <th>Name</th>
-        <th style="width: 100px;">Subject Names & Marks</th>
+      <tr class="title">
+        <th> <button>S.no</button> </th>
+        <th><button>Name</button></th>
+        <th>Roll.no</th>
+        <th><button>Tamil</button></th>
+        <th><button>English</button></th>
+        <th><button>Maths</button></th>
+        <th><button>Science</button></th>
+        <th><button>Social</button></th>
+        <th><button>Total</button></th>
         <th>Action</th>
       </tr>
-      <tr *ngFor="let x of list ;index as i">
+
+      <tr *ngFor="let details of list ;index as i">
         <td>{{i+1}}</td>
-        <td>{{x.Name}}</td>
+        <td>{{details.name}}</td>
+        <td>{{details.id}}</td>
+        <td>{{details.tamil}}</td>
+        <td>{{details.english}}</td>
+        <td>{{details.maths}}</td>
+        <td>{{details.science}}</td>
+        <td>{{details.social}}</td>
+        <td>{{details.total}}</td>
         <td>
-          <table>
-            <tr *ngFor="let y of x.markList">
-              <td>{{y.subjectName}}-{{y.mark}}</td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <button (click)="edit(x)">Edit</button>
-          <button (click)="delete(x)">🗑️ Delete</button>
+          <button (click)="editDetails(details)">Edit</button>
+          <button (click)="deleteDetails(details)">🗑️ Delete</button>
         </td>
       </tr>
     </table>
