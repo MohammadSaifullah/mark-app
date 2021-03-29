@@ -11,15 +11,21 @@
     color: darkred;
     font-family: 'Times New Roman';
     z-index: 1;
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    justify-content: center;
 }
 .innerBox{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 50px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 table{
     border-collapse: collapse;
+    border-right:transparent solid 1px;
+    border-left: transparent solid 1px;
     border: white 1px solid;
     table-layout: fixed;
 }
@@ -34,14 +40,12 @@ td{
     padding: 5px;
     text-align: center;
     word-wrap:break-word;
-    
 }
 textarea{
     background-color: ghostwhite;
     color: darkred;
     height: 100%;
     border: transparent 1px solid;
-
 }
 td input{
     background: rgb(165, 1, 1);
@@ -52,6 +56,7 @@ td input{
 .inputs{
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 .nameInput{
     background-color: darkgray;
@@ -77,7 +82,6 @@ td input{
 }
 .update{
     border:1px solid transparent;
-    
     color: black;
     height: 30px;
     width: 50px;
@@ -108,30 +112,40 @@ td button{
 }
 .output{
     margin-top: 1%;
-    height: 100%;
-    margin-right: 100px;
+    height: 450px;
+    margin-right: 10px;
+    margin-left: 250px;
+    
+}
+.viewTable{
+    table-layout: fixed;
+    margin-right: 0px;
+    position: relative;
     overflow-y: scroll;
 }
+.viewTable th{
+    position: sticky;
+}
+
 .inputTable{
     margin-top: 100px;
 }
 .submark{
     width: 50px;
 }
-
 h3{
     width: 50px;
     border: transparent solid;
     background-color: transparent;
     font-weight: bolder;
-    color: darkred;
+    color: white;
 }
 h3 input{
     width: 50px;
     border: transparent solid;
     background-color: transparent;
     font-weight: bolder;
-    color: darkred;
+    color: white;
 }
 .title th button{
     color: white;
@@ -139,4 +153,16 @@ h3 input{
     border: transparent solid;
     margin: 0px;
     font-weight: bolder;
+}
+.tableHeader th{
+    width: 72px;
+}
+.tableBody td{
+    width: 72px;
+    border: white solid 1px;
+    padding: 3px;
+}
+.tableBody {
+    height: 440px;
+    overflow-y: auto;
 }

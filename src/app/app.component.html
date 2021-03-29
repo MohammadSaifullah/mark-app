@@ -10,7 +10,8 @@
     <div class="name">
       <label for=".nameInput"
         style="color: linen;text-shadow:2px 2px 2px  rgb(204, 204, 204);font-weight: bolder;">Name:</label><br>
-      <input type="text" class="nameInput" [(ngModel)]="personName" #name="ngModel" required />
+      <input type="text" class="nameInput" [(ngModel)]="personName" #name="ngModel" pattern='[A-Za-z\\s]*'
+        placeholder="Enter the student name" required />
     </div>
 
     <div class="table">
@@ -23,74 +24,79 @@
         <!--inputs for subjects and mark-->
         <tr>
           <td>Tamil</td>
-          <td><input type="number" [(ngModel)]="tamil" min="1" max="100"
+          <td><input type="number" [(ngModel)]="tamil" min="0" max="100"
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
               maxlength="3" #note="ngModel" required /></td>
         </tr>
         <tr>
           <td>English</td>
-          <td><input type="number" [(ngModel)]="english" min="1" max="100"
+          <td><input type="number" [(ngModel)]="english" min="0" max="100"
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
               maxlength="3" #note="ngModel" required /></td>
         </tr>
         <tr>
           <td>Maths</td>
-          <td><input type="number" [(ngModel)]="maths" min="1" max="100"
+          <td><input type="number" [(ngModel)]="maths" min="0" max="100"
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
               maxlength="3" #note="ngModel" required /></td>
         </tr>
         <tr>
           <td>Science</td>
-          <td><input type="number" [(ngModel)]="science" min="1" max="100"
+          <td><input type="number" [(ngModel)]="science" min="0" max="100"
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
               maxlength="3" #note="ngModel" required /></td>
         </tr>
         <tr>
           <td>Social</td>
-          <td><input type="number" [(ngModel)]="social" min="1" max="100"
+          <td><input type="number" [(ngModel)]="social" min="0" max="100"
               oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
               maxlength="3" #note="ngModel" required /></td>
         </tr>
       </table>
     </div><br>
 
-    <button class="save" [disabled]="name.invalid" (click)="insertDetails();">💾 Save</button><br>
-    <button class="update" *ngIf="updateButton" [disabled]="name.invalid" (click)="updateDetails();">Update</button>
-    <h3>Total mark {{personName}}:<input type="number" [(ngModel)]="total" value={{total}}>
-    </h3>
+    <button class="save" *ngIf='saveButton && !updateButton' (click)="insertDetails();">💾 Save</button><br>
+    <button class="update" *ngIf="updateButton" (click)="updateDetails();">Update</button>
+    <h3>Total mark {{personName}}:<input type="number" [(ngModel)]="total" value={{total}}></h3>
   </div>
 
   <!--outputs displayed from thedatabase inside a table-->
   <div class="output">
-    <table border="1">
-      <tr class="title">
-        <th> <button>S.no</button> </th>
-        <th><button>Name</button></th>
-        <th>Roll.no</th>
-        <th><button>Tamil</button></th>
-        <th><button>English</button></th>
-        <th><button>Maths</button></th>
-        <th><button>Science</button></th>
-        <th><button>Social</button></th>
-        <th><button>Total</button></th>
-        <th>Action</th>
-      </tr>
+    <div class="tableHeader">
+      <table border="1" class="viewTable">
+        <tr class="title">
+          <th><button>S.no</button> </th>
+          <th style="width: 100px;"><button>Name</button></th>
+          <th><button (click)="sortRollno()">Roll.no</button></th>
+          <th><button (click)="sortTamil()">Tamil</button></th>
+          <th><button (click)="sortEnglish()">English</button></th>
+          <th><button (click)="sortMaths()">Maths</button></th>
+          <th><button (click)="sortScience()">Science</button></th>
+          <th><button (click)="sortSocial()">Social</button></th>
+          <th><button (click)="sortTotal()">Total</button></th>
+          <th style="width: 140px;">Action</th>
+        </tr>
+      </table>
+    </div>
 
-      <tr *ngFor="let details of list ;index as i">
-        <td>{{i+1}}</td>
-        <td>{{details.name}}</td>
-        <td>{{details.id}}</td>
-        <td>{{details.tamil}}</td>
-        <td>{{details.english}}</td>
-        <td>{{details.maths}}</td>
-        <td>{{details.science}}</td>
-        <td>{{details.social}}</td>
-        <td>{{details.total}}</td>
-        <td>
-          <button (click)="editDetails(details)">Edit</button>
-          <button (click)="deleteDetails(details)">🗑️ Delete</button>
-        </td>
-      </tr>
-    </table>
+    <div class="tableBody">
+      <table>
+        <tr *ngFor="let details of list ;index as i">
+          <td>{{i+1}}</td>
+          <td style="width: 100px;">{{details.name}}</td>
+          <td>{{details.id}}</td>
+          <td>{{details.tamil}}</td>
+          <td>{{details.english}}</td>
+          <td>{{details.maths}}</td>
+          <td>{{details.science}}</td>
+          <td>{{details.social}}</td>
+          <td>{{details.total}}</td>
+          <td style="width: 140px;">
+            <button (click)="editDetails(details)">Edit</button>
+            <button (click)="deleteDetails(details)">🗑️ Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
   <router-outlet></router-outlet>
